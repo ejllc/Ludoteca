@@ -1,0 +1,48 @@
+<div class="container">
+  <h1 *ngIf="loan.id == null">Crear préstamo</h1>
+  <h1 *ngIf="loan.id != null">Modificar préstamo</h1>
+
+  <form>
+    <mat-form-field>
+      <mat-label>Identificador</mat-label>
+      <input type="text" matInput placeholder="Identificador" [(ngModel)]="loan.id" name="id" disabled>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Cliente</mat-label>
+      <mat-select [(ngModel)]="loan.client" name="client" required>
+        <mat-option *ngFor="let client of clients" [value]="client">
+          {{ client.name }}
+        </mat-option>
+      </mat-select>
+      <mat-error>Selecciona un cliente</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Juego</mat-label>
+      <mat-select [(ngModel)]="loan.game" name="game" required>
+        <mat-option *ngFor="let game of games" [value]="game">
+          {{ game.title }}
+        </mat-option>
+      </mat-select>
+      <mat-error>Selecciona un juego</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Fecha de inicio</mat-label>
+      <input type="date" matInput placeholder="Fecha de inicio" [(ngModel)]="loan.startDate" name="startDate" required>
+      <mat-error>Ingresa la fecha de inicio</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Fecha de fin</mat-label>
+      <input type="date" matInput placeholder="Fecha de fin" [(ngModel)]="loan.endDate" name="endDate" required>
+      <mat-error>Ingresa la fecha de fin</mat-error>
+    </mat-form-field>
+
+    <div class="buttons">
+      <button mat-stroked-button (click)="onClose()">Cerrar</button>
+      <button mat-flat-button color="primary" (click)="onSave()">Guardar</button>
+    </div>
+  </form>
+</div>
