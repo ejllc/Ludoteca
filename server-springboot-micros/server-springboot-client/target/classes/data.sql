@@ -1,0 +1,21 @@
+INSERT INTO client(name) VALUES ('John Doe');
+INSERT INTO client(name) VALUES ('Jane Smith');
+INSERT INTO client(name) VALUES ('Michael Johnson');
+INSERT INTO client(name) VALUES ('Emily Davis');
+INSERT INTO client(name) VALUES ('David Wilson');
+INSERT INTO client(name) VALUES ('Sarah Thompson');
+INSERT INTO client(name) VALUES ('Christopher Lee');
+INSERT INTO client(name) VALUES ('Olivia Martinez');
+INSERT INTO client(name) VALUES ('William Taylor');
+INSERT INTO client(name) VALUES ('Sophia Anderson');
+INSERT INTO client(name) VALUES ('James Brown');
+INSERT INTO client(name) VALUES ('Isabella Garcia');
+INSERT INTO client(name) VALUES ('Daniel Davis');
+INSERT INTO client(name) VALUES ('Mia Rodriguez');
+INSERT INTO client(name) VALUES ('Benjamin Lopez');
+INSERT INTO client(name) VALUES ('Ava Clark');
+INSERT INTO client(name) VALUES ('Jacob Perez');
+INSERT INTO client(name) VALUES ('Emma Lewis');
+INSERT INTO client(name) VALUES ('Matthew Moore');
+INSERT INTO client(name) VALUES ('Abigail Hill');
+
